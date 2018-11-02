@@ -3,7 +3,8 @@ class DoublyLinkedNode():
     def __init__(self, value):
         self._value = value
         self._next = None
-    
+        self._previous = None
+
     @property
     def value(self):
         return self._value
@@ -20,6 +21,11 @@ class DoublyLinkedNode():
     def next(self, newNode):
         self._next = newNode
 
-if __name__ == "__main__":
-    n = DoublyLinkedNode(93)
-    print(n._value)
+    @property
+    def previous(self):
+        return self._previous
+    
+    @previous.setter
+    def previous(self, newNode):
+        self._previous = newNode
+
