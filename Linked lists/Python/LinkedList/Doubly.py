@@ -1,4 +1,4 @@
-from LinkedNodes import DoublyLinkedNode
+from .LinkedNodes import DoublyLinkedNode
 
 class Doubly:
     def __init__(self):
